@@ -11,7 +11,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        String jdbcUrl = "jdbc:mysql://localhost:3306/testing?useSSL=false";
+        String jdbcUrl = "jdbc:mysql://localhost:3306/library?useSSL=false";
         String user ="root";
         String pwd="";
         try {

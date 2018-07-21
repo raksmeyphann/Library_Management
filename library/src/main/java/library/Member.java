@@ -6,10 +6,10 @@ public class Member {
 	private String name;
 	private String address;
 	private String dateOfMembership;
-	private char membershipType; // V=VIP N=Normal
+	private String membershipType; // V=VIP N=Normal
 	
 	public Member(String id, String name, String address,
-			String dateOfMembership, char membershipType) {
+			String dateOfMembership, String membershipType) {
 		this.id = id;
 		this.name = name;
 		this.address = address;
@@ -24,9 +24,11 @@ public class Member {
 	public String getName() {
 		return this.name;
 	}
+	public String[] toStringData()
+	{
 	
-	public String toString() {
-		return this.id + "   " + this.name + "   " + this.address + "   " + this.dateOfMembership + "   " + this.membershipType;
+		String data[] = { id,name,address,dateOfMembership,membershipType};
+		return data;
 	}
 
 }

@@ -107,7 +107,7 @@ public class Main {
 						System.out.println("Enter date of membership: ");
 						String dateOfMembership = sc.nextLine();
 						System.out.println("Enter type of membership: ");
-						char typeMembership = sc.nextLine().charAt(0);
+						String typeMembership = sc.nextLine();
 						
 						// Create member object
 						Member memberObj = new Member(memberID, memberName, memberAddress, dateOfMembership, typeMembership);
